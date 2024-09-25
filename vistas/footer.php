@@ -1,8 +1,8 @@
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 0.1.2
+      <b>Version</b> 0.0.1
     </div>
-    <strong>Copyright &copy; 2014 <a target="_blank" href="https://www.qachuualoom.org">Qachuu Aloom</a></strong> Todo los derechos
+    <strong>Copyright &copy; 2024 <a target="_blank" href="https://www.qachuualoom.org">Qachuu Aloom</a></strong> Todo los derechos
     reservados.
   </footer>
 

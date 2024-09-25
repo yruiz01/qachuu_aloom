@@ -31,11 +31,11 @@ public function editar($id,$image,$name,$lastname,$email,$address,$phone,$c1_ful
 	return ejecutarConsulta($sql);
 }
 public function desactivar($id){
-	$sql="UPDATE alumn SET condicion='0' WHERE id='$id'";
+	$sql="UPDATE alumn SET is_active='0' WHERE id='$id'";
 	return ejecutarConsulta($sql);
 }
 public function activar($id){
-	$sql="UPDATE alumn SET condicion='1' WHERE id='$id'";
+	$sql="UPDATE alumn SET is_active='1' WHERE id='$id'";
 	return ejecutarConsulta($sql);
 }
  
@@ -60,9 +60,5 @@ public function listar_calif($user_id, $team_id){
 	$sql="SELECT a.id AS idalumn,a.image,a.name,a.lastname,a.email,a.address,a.phone,a.c1_fullname,a.c1_address,a.c1_phone,a.c1_note, a.is_active, a.user_id FROM alumn a INNER JOIN alumn_team alt ON a.id=alt.alumn_id WHERE a.is_active=1 AND a.user_id='$user_id' AND alt.team_id='$team_id' ORDER BY a.id DESC ";
 	return ejecutarConsulta($sql); 
 }
-//listar registros activos
-
-//implementar un metodo para listar los activos, su ultimo precio y el stock(vamos unir con el ultimo registro de la tabla detalle_ingreso)
-
 }
  ?>
